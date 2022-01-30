@@ -1,0 +1,21 @@
+import random
+
+continuar = 0
+
+while (continuar == 0):
+    x = random.randrange(1, 7)
+    print(x)
+    perguntase = 0
+    while(perguntase == 0):
+        pergunta = input(
+            "Deseja continuar jogando? Responda \"s\" para sim e \"n\" para não\n")
+        if(pergunta == 'n'):
+            continuar = 1
+            print("Ok, obrigado!")
+            perguntase = 1
+        elif(pergunta == 's'):
+            print("Vamos lá!")
+            perguntase = 1
+        else:
+            print("Resposta inválida, tente novamente")
+    perguntase = 0
